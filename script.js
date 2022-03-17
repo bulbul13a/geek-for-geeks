@@ -16,14 +16,26 @@
 
 //   printPat(3);
 
-  function getTable(N) {
-    let n=N;
-    let res=[];
-    for(let i=1; i<=10;i++){
-        res[i-1]=(i*n);
-    }
-    console.log(res);
-    return res;
-  }
+  // function getTable(N) {
+  //   let n=N;
+  //   let res=[];
+  //   for(let i=1; i<=10;i++){
+  //       res[i-1]=(i*n);
+  //   }
+  //   console.log(res);
+  //   return res;
+  // }
 
-  getTable(2);
+  // getTable(2);
+
+
+    function print(arr,n){
+      //code here
+      let res=[];
+      for(let i=0;i<n;i+=2){
+          res+=arr[i]+" ";
+      }
+      console.log(res);
+    }
+  
+  print([1,2,3,4,5,6,7,8],8);
